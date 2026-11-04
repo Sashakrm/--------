@@ -1,21 +1,24 @@
-import ProductCounter from './ProductCounter';
+import ProductCounter from "./ProductCounter";
 
-function HeroMedia({ 
-    image,
-    productCount
- }) {
-    return (
-        <div>
-            <img 
-            src={image} 
-            alt="Покупатель с товарами
-            " />
 
-            <ProductCounter 
-            count={productCount} 
-            />
-        </div>
-    );
+function HeroMedia({
+  image,
+  productCount
+}) {
+  return (
+    <div className="relative">
+      <img
+        src={image}
+        alt="Покупатель с товарами"
+        className="h-[380px] w-full rounded-2xl object-cover"
+      />
+
+
+      <ProductCounter
+        count={productCount}
+      />
+    </div>
+  );
 }
 
 export default HeroMedia;
